@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#FF6552",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "用户信息",
+  "usingComponents": {
+    "multiple-select": "/components/momo-multipleSelect/momo-multipleSelect",
+    "xia-editor": "/components/xia-editor/xia-editor"
+  }
+}

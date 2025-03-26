@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.KemuDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.KemuEntity" id="kemuMap">
+        <result property="kemu" column="kemu"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.KemuVO" >
+		SELECT * FROM kemu  kemu         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.KemuVO" >
+		SELECT  kemu.* FROM kemu  kemu 	
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.KemuView" >
+
+		SELECT  kemu.* FROM kemu  kemu 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.KemuView" >
+		SELECT * FROM kemu  kemu <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+
+
+</mapper>

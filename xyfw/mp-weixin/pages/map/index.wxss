@@ -1,0 +1,62 @@
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.logo {
+	height: 200rpx;
+	width: 200rpx;
+	margin-top: 200rpx;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50rpx;
+}
+.text-area {
+	display: flex;
+	justify-content: center;
+}
+.title {
+	font-size: 36rpx;
+	color: #8f8f94;
+}
+.option {
+	max-height: 300rpx;
+	width: 100%;
+
+	line-height: 60rpx;
+	position: fixed;
+
+
+
+
+	top: 42rpx;
+
+
+
+
+	z-index: 9999;
+}
+.column_item {
+	padding: 0 40rpx;
+	height: 60rpx;
+	width: 524rpx;
+	overflow: hidden;
+	margin: 0rpx auto;
+	background-color: #fff;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.column_item:active {
+	background-color: #8F8F94;
+}
+.btn{
+	position: fixed;
+	bottom:  0px;
+	left: 0;
+	width: 100%;
+	height: 88rpx;
+	border-radius: 0;
+}
+
